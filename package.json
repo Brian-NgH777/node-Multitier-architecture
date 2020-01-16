@@ -1,0 +1,41 @@
+{
+  "name": "learning-typescript-erickwendel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickWendel/Learning.NodeJSWithTypescript.git"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "start": "node ./dist/index.js"
+  },
+  "author": "erickwendel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErickWendel/Learning.NodeJSWithTypescript/issues"
+  },
+  "homepage": "https://github.com/ErickWendel/Learning.NodeJSWithTypescript#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cluster": "^0.7.7",
+    "cors": "^2.8.5",
+    "cron": "^1.7.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "method-override": "^3.0.0",
+    "mssql": "^6.0.1",
+    "node-gcm": "^1.0.2",
+    "nodemailer": "^6.4.0",
+    "os": "^0.1.1"
+  },
+  "devDependencies": {
+    "ts-node": "^6.0.5",
+    "typescript": "^3.3.3333",
+    "typescript-eslint-parser": "^15.0.0"
+  }
+}

@@ -6,7 +6,7 @@ import * as cluster from 'cluster';
 import * as os from 'os';
 import MiddlewaresBase from './config/middlewares/base/MiddlewaresBase';
 import DataAccess from './app/dataAccess/DataAccess';
-import CronJob from './app/helpers/CronJob';
+// import CronJob from './app/helpers/CronJob';
 import * as dotenv from 'dotenv';
 const numCPUs = os.cpus().length;
 dotenv.config();
@@ -32,12 +32,12 @@ if (cluster.isMaster) {
     cluster.on('exit', (worker, code, signal) => {
       console.log(`worker ${worker.process.pid} died`);
     });
-    DataAccess.connect();
-    CronJob.insertDataJobEveryday();
+    // DataAccess.connect();
+    // CronJob.insertDataJobEveryday();
   
-    CronJob.jobEverydaySendDataStartDateTime();
-    CronJob.jobEverydaySendDataEndDateTime();
-    CronJob.jobEverydaySendDataNotCompleted();
+    // CronJob.jobEverydaySendDataStartDateTime();
+    // CronJob.jobEverydaySendDataEndDateTime();
+    // CronJob.jobEverydaySendDataNotCompleted();
    
   } else {
     // Workers can share any TCP connection
